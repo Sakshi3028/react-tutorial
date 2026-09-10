@@ -12,10 +12,16 @@ function App() {
 const addvalue= ()=>{
   // console.log("clicked", counter);
   // counter = counter + 1
-  setCounter(counter+1)
+  if(counter<20){
+setCounter(counter+1)
+  }
+  
 }
 const removevalue=()=>{
-  setCounter(counter-1)
+  if(counter>0){
+setCounter(counter-1)
+  }
+  
 }
   return (
     <>
